@@ -1,0 +1,114 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.header {
+	/*border: 1px solid black; */
+	border-bottom: 2px solid #dc0101;
+}
+
+.page {
+	/*border: 1px solid black; */
+}
+ 
+.footer {
+	/*border: 1px solid black; */
+}
+
+.column {
+	/*border: 1px solid black; */
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.page .column {   /*pronadji sve elemente page i u njima column i njima dodjeli osobine */
+	height: 100vh;
+}
+
+#logo-i-social {
+	display: flex;
+}
+
+#logo-holder {
+	flex-grow: 1;
+}
+
+#social-holder {
+	flex-grow: 1;
+	text-align: right;
+}
+
+#social-holder a {
+	text-decoration: none;
+}
+
+#social-holder a img {
+	margin: 10px;
+	height: 30px;
+	width: 30px;
+}
+
+#main-menu {
+	display: flex;
+}
+
+#main-menu a {
+	flex-grow: 1;
+	text-align: center;
+	display: block;
+	padding: 10px 0;
+	text-decoration: none;
+	color: #dc0101;
+	transition: 400ms;
+}
+
+#main-menu a:hover,
+#main-menu a.active {
+	background: #dc0101;
+	color: #ffffff;
+}
+
+#pocetna {
+	text-align: center;
+	color: #ffffff;
+	background: url(images/pozadine/pozadina1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#pocetna h1 {
+	font-size: 48pt; 
+	margin-top: 0px;
+	padding-top: calc(50vh - 300px);
+}
+
+
+.dark-box {
+	background-color: #99999980;
+	border: 1px solid #ffffff;
+	font-size: 24pt;
+	padding: 40px;
+}
+
+
+/*jebiga*/
+
+
+
+
+
+
+
+
+
+/* 
+
+height: 100vh - 100% ekrana (vh je procenat ekrana);
+border - okvir koji prikazuje koji prostor zauzima elemenat
+width - sirina
+height - visina 
+margin - 4 margine (lijevo, desno) koliko je odaljeno od neceg 
+	margin: 0px(od lijeva na desno), 40px(obratno); -auto(sredina)
+padding - isto kao i margin, samo gore i dole
+*/
