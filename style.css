@@ -91,7 +91,11 @@ body {
 	padding: 40px;
 }
 
-
+#usluge {
+	background: url(images/pozadine/pozadina2.jpg);
+	background-size: cover; /*cover znaci da je preko cijelog ekrana slika*/
+	background-attachment: fixed; /*ovo znaci da slika stoji dok se skrola ekran*/
+}
 
 
 
