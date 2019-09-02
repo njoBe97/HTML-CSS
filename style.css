@@ -58,13 +58,13 @@ body {
 	text-align: center;
 	display: block;
 	padding: 10px 0;
-	text-decoration: none; /*da se izbjegnu linije i slicno*/
+	text-decoration: none; 				/*da se izbjegnu linije i slicno*/
 	color: #dc0101;
-	transition: 400ms; /*brzina kojom se prikazuje efekat pomjeranja kada se predje misem*/
+	transition: 400ms; 					/*brzina kojom se prikazuje efekat pomjeranja kada se predje misem*/
 }
 
-#main-menu a:hover,  /*hover znaci kada se misem prelazi preko tog */
-#main-menu a.active { /*active znaci da je aktivna boja na meniju na kojem se nalazi trenutno*/
+#main-menu a:hover,  					/*hover znaci kada se misem prelazi preko tog */
+#main-menu a.active { 					/*active znaci da je aktivna boja na meniju na kojem se nalazi trenutno*/
 	background: #dc0101;
 	color: #ffffff;
 }
@@ -73,29 +73,89 @@ body {
 	text-align: center; 
 	color: #ffffff;
 	background: url(images/pozadine/pozadina1.jpg);
-	background-size: cover; /*cover znaci da je preko cijelog ekrana slika*/
-	background-attachment: fixed; /*ovo znaci da slika stoji dok se skrola ekran*/
+	background-size: cover; 			/*cover znaci da je preko cijelog ekrana slika*/
+	background-attachment: fixed; 		/*ovo znaci da slika stoji dok se skrola ekran*/
 }
 
 #pocetna h1 {
 	font-size: 48pt; 
 	margin-top: 0px;
-	padding-top: calc(50vh - 300px); /* od 50% ekrana 300 pixela dole */
+	padding-top: calc(50vh - 300px); 	/* od 50% ekrana 300 pixela dole */
 }
 
 
 .dark-box {
 	background-color: #99999980;
 	border: 1px solid #ffffff;
-	font-size: 24pt;
+	font-size: 20pt;
 	padding: 40px;
 }
 
 #usluge {
 	background: url(images/pozadine/pozadina2.jpg);
-	background-size: cover; /*cover znaci da je preko cijelog ekrana slika*/
-	background-attachment: fixed; /*ovo znaci da slika stoji dok se skrola ekran*/
+	background-size: cover; 			/*cover znaci da je preko cijelog ekrana slika*/
+	background-attachment: fixed; 		/*ovo znaci da slika stoji dok se skrola ekran*/
 }
+
+
+.align-center {  						/*koristi se da sve sa align-center bude centrirano da se ne bi ponavljako stalno */	
+	text-align: center;
+}
+
+
+.krugovi {
+	display: flex; 						/*rekli smo da ce se dijeliti na dijelove*/
+	margin: 50px 0;						/*odvajanje texta, 50 znaci odmaknuto dole i gore, a 0 znaci da nije odmaknuto nista lijevo i desno*/
+}
+
+.krug-holder {
+	flex-grow: 1;			 			/*svaki ce imati svoj dio, u ovom slucaju 3 dijela vodoravno*/
+	text-align: center;
+}
+
+.krug {
+	background: #dc0101; 				/*pozadina kruga*/
+	color: #fff;						/*boja slova*/
+	font-size: 45px;					/*velicina slova u krugu*/
+	font-weight: bold;					/* da podebljamo slova*/
+/*	width: 200px; 						/*duzina kruga*/
+/*	height: 200px;						/*sirina kruga*/
+	display: inline-block;				/*da krug bude u sredini */
+	padding: 25%;						/* da krug po 25% bude od brojeva na sve strane*/
+	width: 50px;						/* da svi imaju istu sirinu*/
+	height: 50px;
+	border-radius: 50%;					/* da zaoblimo kvadrat u kruznicu */
+
+}
+
+.oznaka {								/*podesavanje fonta*/
+	font-size: 24px;					/*velicina slova*/
+	font-weight: bold;					/*podebljana slova*/
+	margin-top: 10px;					/*odmaknuto 10 piksela odozgo*/
+}
+
+.tehnologije {							/*podjela na dijelove vodoravno*/
+	display: flex;
+	margin: 50px 0;
+}
+
+.tehnologija {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.tehnologija img {						/*podesavanje velicine ikonica*/
+	height: 55px;
+	width: 55px;
+}
+
+.tehnologija p {
+	font-weight: bold;					/*podebljana slova u paragrafu*/
+}
+
+
+
+
 
 
 
