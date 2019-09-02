@@ -9,7 +9,7 @@ body {
 }
 
 .page {
-	/*border: 1px solid black; */
+	/*border: 1px solid black; */ 
 }
  
 .footer {
@@ -19,7 +19,7 @@ body {
 .column {
 	/*border: 1px solid black; */
 	width: 1000px;
-	margin: 0px auto;
+	margin: 0px auto; /*auto znaci da je u sredini*/
 }
 
 .page .column {   /*pronadji sve elemente page i u njima column i njima dodjeli osobine */
