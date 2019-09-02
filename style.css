@@ -5,7 +5,7 @@ body {
 
 .header {
 	/*border: 1px solid black; */
-	border-bottom: 2px solid #dc0101;
+	border-bottom: 2px solid #dc0101; /*linija ispod menija*/
 }
 
 .page {
@@ -23,20 +23,20 @@ body {
 }
 
 .page .column {   /*pronadji sve elemente page i u njima column i njima dodjeli osobine */
-	height: 100vh;
+	height: 100vh; /* 100% ekrana */
 }
 
 #logo-i-social {
-	display: flex;
+	display: flex; /*podijela ekrana*/
 }
 
 #logo-holder {
-	flex-grow: 1;
+	flex-grow: 1; 
 }
 
 #social-holder {
-	flex-grow: 1;
-	text-align: right;
+	flex-grow: 1; 
+	text-align: right; /*desna strana*/
 }
 
 #social-holder a {
@@ -44,43 +44,43 @@ body {
 }
 
 #social-holder a img {
-	margin: 10px;
+	margin: 10px; /*odvoji od rubova za broj pixela*/
 	height: 30px;
 	width: 30px;
 }
 
 #main-menu {
-	display: flex;
+	display: flex; 
 }
 
 #main-menu a {
-	flex-grow: 1;
+	flex-grow: 1; 
 	text-align: center;
 	display: block;
 	padding: 10px 0;
-	text-decoration: none;
+	text-decoration: none; /*da se izbjegnu linije i slicno*/
 	color: #dc0101;
-	transition: 400ms;
+	transition: 400ms; /*brzina kojom se prikazuje efekat pomjeranja kada se predje misem*/
 }
 
-#main-menu a:hover,
-#main-menu a.active {
+#main-menu a:hover,  /*hover znaci kada se misem prelazi preko tog */
+#main-menu a.active { /*active znaci da je aktivna boja na meniju na kojem se nalazi trenutno*/
 	background: #dc0101;
 	color: #ffffff;
 }
 
 #pocetna {
-	text-align: center;
+	text-align: center; 
 	color: #ffffff;
 	background: url(images/pozadine/pozadina1.jpg);
-	background-size: cover;
-	background-attachment: fixed;
+	background-size: cover; /*cover znaci da je preko cijelog ekrana slika*/
+	background-attachment: fixed; /*ovo znaci da slika stoji dok se skrola ekran*/
 }
 
 #pocetna h1 {
 	font-size: 48pt; 
 	margin-top: 0px;
-	padding-top: calc(50vh - 300px);
+	padding-top: calc(50vh - 300px); /* od 50% ekrana 300 pixela dole */
 }
 
 
