@@ -153,7 +153,9 @@ body {
 	font-weight: bold;					/*podebljana slova u paragrafu*/
 }
 
-
+#o-nama h2 {			/*povecanje slova*/
+	font-size: 40px;
+}
 
 
 
