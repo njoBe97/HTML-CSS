@@ -5,7 +5,7 @@ body {
 
 .header {
 	/*border: 1px solid black; */
-	border-bottom: 2px solid #dc0101; /*linija ispod menija*/
+	border-bottom: 2px solid #dc0101; 	/*linija ispod menija*/
 }
 
 .page {
@@ -19,15 +19,15 @@ body {
 .column {
 	/*border: 1px solid black; */
 	width: 1000px;
-	margin: 0px auto; /*auto znaci da je u sredini*/
+	margin: 0px auto; 					/*auto znaci da je u sredini*/
 }
 
-.page .column {   /*pronadji sve elemente page i u njima column i njima dodjeli osobine */
-	height: 100vh; /* 100% ekrana */
+.page .column {   						/*pronadji sve elemente page i u njima column i njima dodjeli osobine */
+	height: 100vh; 						/* 100% ekrana */
 }
 
 #logo-i-social {
-	display: flex; /*podijela ekrana*/
+	display: flex; 						/*podijela ekrana*/
 }
 
 #logo-holder {
@@ -36,7 +36,7 @@ body {
 
 #social-holder {
 	flex-grow: 1; 
-	text-align: right; /*desna strana*/
+	text-align: right;			 		/*desna strana*/
 }
 
 #social-holder a {
@@ -44,7 +44,7 @@ body {
 }
 
 #social-holder a img {
-	margin: 10px; /*odvoji od rubova za broj pixela*/
+	margin: 10px; 						/*odvoji od rubova za broj pixela*/
 	height: 30px;
 	width: 30px;
 }
@@ -153,8 +153,53 @@ body {
 	font-weight: bold;					/*podebljana slova u paragrafu*/
 }
 
-#o-nama h2 {			/*povecanje slova*/
+#o-nama h2 {							/*povecanje slova*/
 	font-size: 40px;
+	text-align: center;
+}
+
+#usluge {
+	color: #fff;
+}
+
+#usluge h2 {
+	font-weight: bold;
+	padding: 40px;
+	text-align: center;
+}
+
+.service-row {
+	display: flex;
+	margin-top: 60px;
+	justify-content: space-between;   	/*prostor izmedju*/
+}
+
+.service-row > div { 					/* svi div-ovi koji se nalaze unutar "service-row" poprimit ce ove css osobine*/
+	text-align: center;
+	position: relative;					/* da img i paragraf budu pozicionirani*/
+	width: 300px;
+	height: 180px;
+	border: 1px solid #fff;
+}
+
+.service-row > div > img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.service-row > div > p {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	padding: 10px;
+	background-color: #ffffffA2;
+	margin-bottom: 0px;
+	color: #000;
+	border-top: 1px solid #fff;
 }
 
 
@@ -162,13 +207,17 @@ body {
 
 
 
-/* 
 
-height: 100vh - 100% ekrana (vh je procenat ekrana);
-border - okvir koji prikazuje koji prostor zauzima elemenat
-width - sirina
-height - visina 
-margin - 4 margine (lijevo, desno) koliko je odaljeno od neceg 
-	margin: 0px(od lijeva na desno), 40px(obratno); -auto(sredina)
-padding - isto kao i margin, samo gore i dole
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
