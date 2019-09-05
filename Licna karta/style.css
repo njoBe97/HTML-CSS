@@ -1,0 +1,144 @@
+
+
+.licna-karta {
+	background-color: #fefefe;
+	border-radius: 15px;
+	font-family: Calibri, sans-serif;
+	display: grid;
+	width: 490px;
+	height: 300px;
+	padding: 8px 16px;    /* 4 lijevo i desno 8 gore i dole*/
+	border: 2px solid black;
+
+	grid-template: "sg bp rep rep rep"
+				   "sg bp lk  lk  lk"
+				   "fo fo pre pre cg"
+				   "fo fo ime ime cg"
+				   "fo fo dr  dr  cg"
+				   "fo fo pol reg ss"	
+				   "fo fo diz diz ss"
+				   "fo fo dva dva ss"
+				   "di di di  di  po";
+	grid-template-columns: 80px 80px 100px 100px 130px;						/*kolone - uspravno*/
+	grid-template-rows: 30px 30px 35px 35px 35px 35px 35px 35px 30px;		/*redovi - vodoravno*/
+
+
+	/*
+	Znacenje oznaka: 
+
+	sg 	- sivi grb
+	rep - republika
+	lk 	- licna karta
+	fo 	- fotografija u boji 
+	pre - prezime
+	ime - ime
+	dr 	- datum rodjenja
+	pol - pol
+	reg - registracijska oznaka
+	diz - datum izdavanja
+	dva - datum vazenja
+	cg 	- crveni grb
+	ss 	- siva slika
+	di 	- datum izdavanja
+	po 	- potpis
+	
+	Oznake se mogu pisati i punim rijecima! 
+	Slike koje se koriste trenutno su samo radi izgleda, potrebno pronaci adekvatne!
+	*/
+}
+
+
+.sg {
+	grid-area: sg;
+	align-self: center;
+	justify-self: center; 
+}
+
+.rep {
+	grid-area: rep;
+	align-self: center;
+}
+
+.lk {
+	grid-area: lk;
+	align-self: center;
+}
+
+.fo {
+	grid-area: fo;
+	align-self: center;
+	justify-self: center; 
+}
+
+.pre {
+	grid-area: pre;
+	align-self: center;
+}
+
+.ime {
+	grid-area: ime;
+	align-self: center;
+}
+
+.dr {
+	grid-area: dr;
+	align-self: center;
+}
+
+.pol {
+	grid-area: pol;
+	align-self: center;
+}
+
+.reg {
+	grid-area: reg;
+	align-self: center;
+}
+
+.diz {
+	grid-area: diz;
+	align-self: center;
+}
+
+.dva {
+	grid-area: dva;
+	align-self: center;
+}
+
+.cg {
+	grid-area: cg;
+	align-self: end;
+	justify-self: center; 
+}
+
+.ss {
+	grid-area: ss;
+	align-self: center;
+	justify-self: center; 
+}
+
+.di {
+	grid-area: di;
+	align-self: center;
+}
+
+.po {
+	grid-area: po;
+	align-self: center;
+	justify-self: center; 
+}
+
+.velika-slova {
+	font-size: 18px;
+	font-weight: bold;
+	color: #901;
+	line-height: 14px;
+}
+
+.mala-slova {
+	font-size: 13px;
+	font-style: italic;
+	color: #aaa;
+	line-height: 9px;
+}
+
