@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulari</title>
+		<meta charset="utf-8">
+
+	</head>
+		<form method="post" action="/register">
+			<label for="input-ime">Ime:</label>
+			<input type="text" name="ime" id="input-ime" required>	<br>
+
+			<label for="i-procenat">Procanat</label>
+			<input type="number" name="procenat" id="i-procenat" step="0.01" min="0" max="1" value="0.5" required>	<br>
+
+			<label for="i-email">E-mail</label>
+			<input type="email" name="E-mail" id="i-email" required>	<br>
+
+			<label for="i-phone">Telefon</label>
+			<input type="tel" name="Telefon" id="i-phone" required>	<br>
+			<!-- ¸ako je type="tel" znaci da je jedino prihvatljivo broj telefona kao ispravno -->
+
+			<label for="i-zaposlen">Zaposlen</label>
+			<input type="checkbox" name="zaposlen" id="i-zaposlen" value="1"> <br>
+			<!-- Ako je value 1 - salje se informacija da je box cekiran/oznacen sa tacno .. -->
+
+			<label>Odaberite kategoriju</label>	<br>
+			<input type="radio" name="kategorija" value="1"> Kategorija 1	<br>
+			<input type="radio" name="kategorija" value="2"> Kategorija 2	<br>
+			<input type="radio" name="kategorija" value="3"> Kategorija 3	<br>
+			<input type="radio" name="kategorijE" value="4"> Kategorija 4	<br>
+			<input type="radio" name="kategorijE" value="5"> Kategorija 5	<br>
+			<!-- Ako je type radio i name isti kod vise input-a .. samo 1 moze biti cekiran -->
+
+			<label for="i-adresa">Adresa:</label>	<br>
+			<textarea rows="5" name="adresa" id="i-adresa" required></textarea>	<br>
+
+			<label for="i-drzava">Drzava:</label>
+			<select name="drzava" id="i-drzava" required>
+				<option value="0001">Bosna</option>
+				<option value="0002">Srbija</option>
+				<option value="0003">Hrvatska aaaaaaaaaaaaaaaaaaaaaa</option>
+			</select>	<br>
+
+			<label for="i-drzava">Drzava 2</label required>
+			<input type="text" name="drzava-2" id="i-drzava" list="spisak-drzava">
+			<datalist id="spisak-drzava">
+				<option value="Bosna i Hercegovina">
+				<option value="Srbija">
+				<option value="Hrvatska">
+			</datalist>	<br>
+
+			<label for="i-opseg">Opseg</label>
+			<input type="range" name="opseg" id="i-opseg" min="10" max="50" step="5">	<br> <br>
+
+			<button type="submit" name="???">Posalji podatke</button>
+
+			<button type="reset" name="???">Resetuj</button>
+		</form>
+	<body>
+
+	</body>
+</html>
