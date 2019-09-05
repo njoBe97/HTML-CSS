@@ -1,11 +1,17 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
+	font-family: Calibri, sans-serif;
 }
 
 .header {
 	/*border: 1px solid black; */
 	border-bottom: 2px solid #dc0101; 	/*linija ispod menija*/
+	background-color: #fefefe;
 }
 
 .page {
@@ -294,6 +300,7 @@ body {
 	flex-basis: 0;   						/*basis znaci da duzina texta ne utjece na dimenzije*/
 }
 
+
 .job-descriptions {
 	flex-grow: 2;
 	flex-basis: 0;
@@ -386,14 +393,48 @@ body {
 
 /* id footer */
 
+.footer {
+	border-top:  5px solid #dc0101;
+	background-color: #fefefe;
+	font-size: 14px;
+}
 
+.footer > .column {
+	display: flex;
+}
 
+.footer .footer-c {
+	flex-grow: 1;
+	flex-basis: 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
 
+.footer .footer-c {
+	flex-grow: 1;
+	flex-basis: 0;
+}
 
+.align-lijevo {
+	text-align: left;
+}
 
+.align-sredina {
+	text-align: center;
+}
 
+.align-desno {
+	text-align: right;
+}
 
+.red-link {
+	text-decoration: none;
+	color: #dc0101;
+}
 
+.red-link:hover {
+	text-decoration: underline;
+}
 
 
 
