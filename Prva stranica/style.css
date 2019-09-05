@@ -17,7 +17,6 @@ body {
 }
 
 .column {
-	border: 1px solid black; 
 	width: 1000px;
 	margin: 0px auto; 					/*auto znaci da je u sredini*/
 }
@@ -340,7 +339,52 @@ body {
 
 
 
+/* id kontakt */
 
+
+
+
+#kontakt h2 {
+	margin-top: 80px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+
+.kontakt-region {
+	display: grid;
+	grid-template: "adrese  mapa"
+				   "mejlovi mapa";
+	grid-template-colums: 300px 1fr;
+}
+
+.kontakt-adrese {
+	grid-area: adrese;
+	padding-bottom: 15px;
+	font-size: 14px;
+}
+
+.kontakt-mejlovi {
+	grid-area: mejlovi;
+	font-size: 14px;
+}
+
+.kontakt-mejlovi a {
+	text-decoration: none;
+	color: #dc0101;	
+}
+
+.kontakt-mejlovi a:hover {
+	text-decoration: underline;
+}
+
+.kontakt-mapa {
+	grid-area: mapa;
+}
+
+
+
+/* id footer */
 
 
 
